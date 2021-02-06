@@ -21,7 +21,9 @@ button {
 button:focus,
 button:active,
 input:focus,
-input:active {
+input:active,
+textarea:focus,
+textarea:active {
   outline: none;
 }
 button .hide {
@@ -58,6 +60,7 @@ form {
 form > * {
   width: 100%;
 }
-form input {
+form input,
+form textarea {
   margin-bottom: 1rem;
 }

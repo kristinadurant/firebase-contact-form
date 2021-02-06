@@ -19,7 +19,9 @@ button {
 button:focus,
 button:active,
 input:focus,
-input:active {
+input:active,
+textarea:focus,
+textarea:active {
   outline: none;
 }
 button .hide {
@@ -44,8 +46,8 @@ button .hide {
   max-width: 1100px;
 }
 /*=========================
-      FORM STYLE
-  ==========================*/
+    FORM STYLE
+==========================*/
 form {
   display: flex;
   flex-direction: column;
@@ -55,6 +57,7 @@ form {
 form > * {
   width: 100%;
 }
-form input {
+form input,
+form textarea {
   margin-bottom: 1rem;
 }
