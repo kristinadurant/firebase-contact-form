@@ -1,0 +1,63 @@
+@color: #222;
+@color-accent: #009688;
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: @color;
+  line-height: 1.5em;
+  font-size: 1rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+button:focus,
+button:active,
+input:focus,
+input:active {
+  outline: none;
+}
+button .hide {
+  font-size: 1px;
+  height: 1px;
+  width: 1px;
+  display: inline-block;
+  overflow: hidden;
+  color: transparent;
+}
+.button {
+  background-color: @color-accent;
+  color: #fff;
+  border: 1px solid @color-accent;
+}
+.button:hover {
+  background-color: #ffff;
+  color: @color-accent;
+}
+.inner {
+  width: 75%;
+  max-width: 1100px;
+}
+
+/*=========================
+    FORM STYLE
+==========================*/
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 50px 30px;
+}
+form > * {
+  width: 100%;
+}
+form input {
+  margin-bottom: 1rem;
+}
